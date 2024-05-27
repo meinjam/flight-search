@@ -1,17 +1,24 @@
 import React from 'react';
-import DepartureDetailsHead from './DepartureDetailsHead.Component';
+import { cn } from '@/lib/cn';
+import DepartureDetailsHead from '@/components/flightDetails/DepartureDetailsHead.Component';
 
 interface DepartureSingleTypes {
   headBg: string;
   showWarning?: boolean;
   leftText: string;
   rightText: string | React.JSX.Element;
+  colorfulMapIcon?: boolean;
 }
 
-const DepartureSingle = ({ headBg, showWarning, leftText, rightText }: DepartureSingleTypes) => {
+const DepartureSingle = ({ headBg, showWarning, leftText, rightText, colorfulMapIcon }: DepartureSingleTypes) => {
   return (
     <div className='px-4'>
-      <DepartureDetailsHead headBg={headBg} leftText={leftText} rightText={rightText} />
+      <DepartureDetailsHead
+        headBg={headBg}
+        leftText={leftText}
+        rightText={rightText}
+        colorfulMapIcon={colorfulMapIcon}
+      />
       <div>
         <div className='flex gap-3 items-center mt-3'>
           <div className='w-8 h-9 shrink-0 grid place-content-center'>
@@ -42,7 +49,7 @@ const DepartureSingle = ({ headBg, showWarning, leftText, rightText }: Departure
               <div className='w-[2px] bg-[#D8E1EB] rounded mb-1 mt-3 grow'></div>
             </div>
           </div>
-          <div className='pb-4 grow'>
+          <div className={cn('grow', showWarning ? 'pb-4' : '')}>
             <div className='grid grid-cols-3 py-4'>
               <div className='col-span-1'>
                 <h5 className='text-sm leading-[18px] font-medium text-dark-deep'>Turkish Airlines</h5>

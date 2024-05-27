@@ -1,7 +1,7 @@
 import React from 'react';
 import FlightCardHeader from '@/components/flightDetails/FlightCardHeader.Component';
-import DepartureSingle from './DepartureSingle.Component';
-import DepartureDetailsHead from './DepartureDetailsHead.Component';
+import DepartureSingle from '@/components/flightDetails/DepartureSingle.Component';
+import DepartureDetailsHead from '@/components/flightDetails/DepartureDetailsHead.Component';
 
 const FlightCard = () => {
   return (
@@ -11,7 +11,7 @@ const FlightCard = () => {
       <div className='py-4'>
         <DepartureSingle
           showWarning={true}
-          headBg='#F5F7FA'
+          headBg='bg-[#F5F7FA]'
           leftText='Departure from Dhaka'
           rightText={
             <>
@@ -21,20 +21,21 @@ const FlightCard = () => {
         />
 
         <DepartureSingle
-          headBg='#E8F3FF'
+          headBg='bg-[#E8F3FF]'
           leftText='Layover at Dubai: 12 hr 20 min'
           rightText='Dubai International Airport'
         />
 
         <div className='px-4'>
           <DepartureDetailsHead
-            headBg='#F5F7FA'
+            headBg='bg-[#F5F7FA]'
             leftText='Destination at New York'
             rightText={
               <>
                 <span className='font-medium'> Terminal 4: </span> John F Kennedy International Airport
               </>
             }
+            colorfulMapIcon={true}
           />
         </div>
       </div>
