@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.departure-single-title {
+  @apply text-base font-semibold leading-6 text-primary-black;
+}
+
+.departure-single-description {
+  @apply text-sm leading-5 text-dark-light;
+}

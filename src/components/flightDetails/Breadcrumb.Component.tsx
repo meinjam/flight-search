@@ -2,7 +2,7 @@ import React from 'react';
 
 const Breadcrumb = () => {
   return (
-    <ul className='text-theme-13 text-dark-light flex gap-[6px] mb-5'>
+    <ul className='mb-5 flex flex-wrap gap-[6px] text-theme-13 text-dark-light'>
       <li className='flex items-center gap-[6px]'>
         <a href='#'> Home</a> <RightArrow />
       </li>
@@ -12,7 +12,7 @@ const Breadcrumb = () => {
       <li className='flex items-center gap-[6px]'>
         <a href='#'> Flight</a> <RightArrow />
       </li>
-      <li className='flex items-center text-primary font-medium'>STFL17121182045413</li>
+      <li className='flex items-center font-medium text-primary'>STFL17121182045413</li>
     </ul>
   );
 };

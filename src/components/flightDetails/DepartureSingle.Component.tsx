@@ -20,54 +20,54 @@ const DepartureSingle = ({ headBg, showWarning, leftText, rightText, colorfulMap
         colorfulMapIcon={colorfulMapIcon}
       />
       <div>
-        <div className='flex gap-3 items-center mt-3'>
-          <div className='w-8 h-9 shrink-0 grid place-content-center'>
+        <div className='mt-4 flex items-center gap-3'>
+          <div className='grid h-9 w-8 shrink-0 place-content-center'>
             <AirlinesIconSvg />
           </div>
-          <div className='grid grid-cols-3 w-full'>
+          <div className='grid w-full grid-cols-3 gap-x-3'>
             <div>
-              <h5 className='text-base leading-6 text-primary-black font-semibold'>DAC - DXB</h5>
-              <p className='text-sm text-dark-light leading-5'>12 hr 20 min</p>
+              <h5 className='departure-single-title'>DAC - DXB</h5>
+              <p className='departure-single-description'>12 hr 20 min</p>
             </div>
             <div>
-              <h5 className='text-base leading-6 text-primary-black font-semibold'>07:30 PM</h5>
-              <p className='text-sm text-dark-light leading-5'>28 Mar, Friday</p>
+              <h5 className='departure-single-title'>07:30 PM</h5>
+              <p className='departure-single-description'>28 Mar, Friday</p>
             </div>
             <div>
-              <h5 className='text-base leading-6 text-primary-black font-semibold'>08:50 AM</h5>
-              <p className='text-sm text-dark-light leading-5'>29 Mar, Saturday</p>
+              <h5 className='departure-single-title'>08:50 AM</h5>
+              <p className='departure-single-description'>29 Mar, Saturday</p>
             </div>
           </div>
         </div>
         <div className='flex gap-3'>
           <div className='w-8 shrink-0'>
-            <div className='flex flex-col items-center justify-between h-full'>
-              <div className='w-[2px] bg-[#D8E1EB] rounded mt-1 mb-3 grow'></div>
+            <div className='flex h-full flex-col items-center justify-between'>
+              <div className='mb-3 mt-1 w-[2px] grow rounded bg-[#D8E1EB]'></div>
               <div className='grow-0'>
                 <PlaneSvg />
               </div>
-              <div className='w-[2px] bg-[#D8E1EB] rounded mb-1 mt-3 grow'></div>
+              <div className='mb-1 mt-3 w-[2px] grow rounded bg-[#D8E1EB]'></div>
             </div>
           </div>
           <div className={cn('grow', showWarning ? 'pb-4' : '')}>
-            <div className='grid grid-cols-3 py-4'>
+            <div className='grid grid-cols-3 gap-x-3 py-4'>
               <div className='col-span-1'>
-                <h5 className='text-sm leading-[18px] font-medium text-dark-deep'>Turkish Airlines</h5>
-                <p className='text-dark-light text-sm leading-[18px] mt-1'>Flight no : TUR467</p>
+                <h5 className='text-sm font-medium leading-[18px] text-dark-deep'>Turkish Airlines</h5>
+                <p className='mt-1 text-sm leading-[18px] text-dark-light'>Flight no : TUR467</p>
               </div>
               <div className='col-span-2'>
-                <h5 className='text-dark-light text-sm leading-[18px]'>Airbus Industrie 737-800-738</h5>
-                <p className='text-dark-light text-sm leading-[18px] mt-1'>
+                <h5 className='text-sm leading-[18px] text-dark-light'>Airbus Industrie 737-800-738</h5>
+                <p className='mt-1 text-sm leading-[18px] text-dark-light'>
                   Class : <span className='font-medium'>ECONOMY-Y (O)</span>
                 </p>
               </div>
             </div>
             {showWarning && (
-              <div className='bg-[#FFEEDB] border border-[#FFE1C2] rounded-md flex items-center gap-2 px-3 py-2'>
+              <div className='flex items-center gap-2 rounded-md border border-[#FFE1C2] bg-[#FFEEDB] px-3 py-2'>
                 <div>
                   <WarningSvg />
                 </div>
-                <p className='text-dark-deep text-xs'>
+                <p className='text-xs text-dark-deep'>
                   Technical stoppage at Malpensa International Airport (Milano). Before booking this flight please check
                   your visa requirements as per your nationality
                 </p>

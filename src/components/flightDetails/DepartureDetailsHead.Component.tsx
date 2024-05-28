@@ -10,11 +10,16 @@ interface DepartureDetailsHeadType {
 
 const DepartureDetailsHead = ({ headBg, leftText, rightText, colorfulMapIcon }: DepartureDetailsHeadType) => {
   return (
-    <div className='flex items-center gap-3 my-[2px]'>
-      <div className='w-8 h-9 grid place-content-center shrink-0'>
+    <div className='my-[4px] flex items-center gap-3'>
+      <div className='grid h-9 w-8 shrink-0 place-content-center'>
         <LocationSvg colorfulMapIcon={colorfulMapIcon} />
       </div>
-      <div className={cn('grow text-theme-13 flex justify-between items-center rounded-md px-4 py-3', headBg)}>
+      <div
+        className={cn(
+          'flex grow flex-col justify-between gap-2 rounded-md px-4 py-3 text-theme-13 xs:flex-row xs:items-center',
+          headBg
+        )}
+      >
         <div className='font-medium text-primary-black'>{leftText}</div>
         <div className='text-dark-light'>{rightText}</div>
       </div>

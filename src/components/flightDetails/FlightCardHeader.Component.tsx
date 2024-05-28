@@ -2,14 +2,14 @@ import React from 'react';
 
 const FlightCardHeader = () => {
   return (
-    <div className='px-5 py-4 border-b border-[#ebf0f5] flex justify-between items-center'>
+    <div className='flex items-center justify-between gap-x-3 border-b border-[#ebf0f5] px-5 py-4'>
       <div className='flex items-center gap-4'>
-        <div className='size-6 bg-primary rounded-full text-white flex items-center justify-center text-sm font-semibold'>
+        <div className='flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white'>
           1
         </div>
         <div>
-          <div className='text-primary-black font-semibold text-lg'>DAC → JFK</div>
-          <ul className='flex items-center text-theme-13 leading-4 text-dark-light gap-primary'>
+          <div className='text-lg font-semibold text-primary-black'>DAC → JFK</div>
+          <ul className='flex flex-wrap items-center gap-primary text-theme-13 leading-4 text-dark-light'>
             <li className='flex items-center gap-primary'>
               Round Trip <DotSvg />
             </li>
@@ -20,7 +20,7 @@ const FlightCardHeader = () => {
           </ul>
         </div>
       </div>
-      <div className='bg-[#E8F3FF] text-xs px-2 py-1 text-primary rounded-[32px] font-medium'>33h 20m</div>
+      <div className='shrink-0 rounded-[32px] bg-[#E8F3FF] px-2 py-1 text-xs font-medium text-primary'>33h 20m</div>
     </div>
   );
 };

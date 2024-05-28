@@ -32,6 +32,9 @@ const config: Config = {
       fontSize: {
         'theme-13': ['13px', '18px'],
       },
+      screens: {
+        xs: '575px',
+      },
     },
   },
   plugins: [],
