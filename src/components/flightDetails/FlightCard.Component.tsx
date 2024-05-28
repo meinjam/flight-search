@@ -26,7 +26,7 @@ const FlightCard = () => {
           rightText='Dubai International Airport'
         />
 
-        <div className='px-4'>
+        <div className='px-3 xs:px-4'>
           <DepartureDetailsHead
             headBg='bg-[#F5F7FA]'
             leftText='Destination at New York'

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FlightCardHeader = () => {
   return (
-    <div className='flex items-center justify-between gap-x-3 border-b border-[#ebf0f5] px-5 py-4'>
+    <div className='flex items-center justify-between gap-x-3 border-b border-[#ebf0f5] px-3 py-4 xs:px-5'>
       <div className='flex items-center gap-4'>
         <div className='flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white'>
           1

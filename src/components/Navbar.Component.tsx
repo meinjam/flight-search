@@ -3,34 +3,59 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <header className='relative bg-white py-2 xs:py-3'>
+    <header className='relative bg-white py-2 md:py-3'>
       <nav>
-        <div className='container flex items-center justify-center gap-x-5 xs:justify-between'>
-          <div className='w-32 xs:w-36'>
-            <Link href='/'>
-              <MainLogo />
-            </Link>
-          </div>
-          <ul className='hidden items-center gap-x-10 text-sm font-medium text-dark-light xs:flex'>
+        <div className='container flex items-center justify-center gap-x-5 lg:justify-between'>
+          <Link href='/' className='block w-32 md:w-36'>
+            <MainLogo />
+          </Link>
+          <ul className='hidden items-center gap-x-10 text-sm font-medium lg:flex'>
             <li>
-              <a href='#'>Flight</a>
+              <a href='#' className='nav-link'>
+                Flight
+              </a>
             </li>
             <li>
-              <a href='#'>Hotel</a>
+              <a href='#' className='nav-link'>
+                Hotel
+              </a>
             </li>
             <li>
-              <a href='#'>Hoilday</a>
+              <a href='#' className='nav-link'>
+                Hoilday
+              </a>
+            </li>
+            <li>
+              <a href='#' className='nav-link flex items-center'>
+                Visa <BottomArrow />
+              </a>
+            </li>
+            <li>
+              <a href='#' className='nav-link'>
+                Medical
+              </a>
+            </li>
+            <li>
+              <a href='#' className='nav-link'>
+                Promotions
+              </a>
+            </li>
+            <li>
+              <a href='#' className='nav-link flex items-center'>
+                Others <BottomArrow />
+              </a>
             </li>
           </ul>
-          <div className='hidden xs:block'>
-            <a href='#' className='text-md rounded-[32px] bg-primary px-5 py-2 font-medium text-white'>
-              Login
-            </a>
-          </div>
+          <a
+            href='#'
+            className='text-md hidden rounded-[32px] bg-primary px-5 py-2 font-medium text-white duration-300 hover:bg-[#0070F5] lg:block'
+          >
+            Login
+          </a>
         </div>
       </nav>
 
-      <div className='absolute left-4 top-1/2 -translate-y-1/2 cursor-pointer xs:hidden'>
+      <div className='absolute left-4 top-1/2 -translate-y-1/2 cursor-pointer lg:hidden'>
         <MobileToggleSvg />
       </div>
     </header>
@@ -96,5 +121,20 @@ const MobileToggleSvg = () => (
       d='M21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6Z'
       fill='#9BA6B2'
     />
+  </svg>
+);
+
+const BottomArrow = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className='stroke-current'
+    width={22}
+    height={22}
+    viewBox='0 0 24 24'
+    strokeWidth={2}
+    fill='none'
+  >
+    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+    <path d='M6 9l6 6l6 -6' />
   </svg>
 );

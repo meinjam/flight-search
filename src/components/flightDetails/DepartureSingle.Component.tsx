@@ -12,7 +12,7 @@ interface DepartureSingleTypes {
 
 const DepartureSingle = ({ headBg, showWarning, leftText, rightText, colorfulMapIcon }: DepartureSingleTypes) => {
   return (
-    <div className='px-4'>
+    <div className='px-3 xs:px-4'>
       <DepartureDetailsHead
         headBg={headBg}
         leftText={leftText}

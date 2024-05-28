@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-link {
+  @apply text-dark-light duration-300 hover:text-primary;
+}
+
 .departure-single-title {
   @apply text-base font-semibold leading-6 text-primary-black;
 }
