@@ -4,13 +4,22 @@ const Breadcrumb = () => {
   return (
     <ul className='mb-5 flex flex-wrap gap-[6px] text-theme-13 text-dark-light'>
       <li className='flex items-center gap-[6px]'>
-        <a href='#'> Home</a> <RightArrow />
+        <a href='#' className='duration-300 hover:text-primary'>
+          Home
+        </a>
+        <RightArrow />
       </li>
       <li className='flex items-center gap-[6px]'>
-        <a href='#'> Booking History</a> <RightArrow />
+        <a href='#' className='duration-300 hover:text-primary'>
+          Booking History
+        </a>
+        <RightArrow />
       </li>
       <li className='flex items-center gap-[6px]'>
-        <a href='#'> Flight</a> <RightArrow />
+        <a href='#' className='duration-300 hover:text-primary'>
+          Flight
+        </a>
+        <RightArrow />
       </li>
       <li className='flex items-center font-medium text-primary'>STFL17121182045413</li>
     </ul>
